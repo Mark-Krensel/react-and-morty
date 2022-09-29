@@ -1,25 +1,18 @@
 import "./App.css";
+import Title from "./components/title/Title";
+import Navigation from "./components/navigation/Navigation";
+import Card from "./components/card/Card";
 
 function App() {
   return (
     <div className="App">
-      <header className="Header">React and Morty</header>
+      <Title>React and Morty</Title>
+
       <ul>
-        <li>
-          <p>Morty Smith</p>
-          <img
-            src="https://rickandmortyapi.com/api/character/avatar/2.jpeg"
-            alt=""
-          />
-        </li>
+        <Card />
       </ul>
       <nav>
-        <ul>
-          <li>Home</li>
-          <li>Favourite</li>
-          <li>Special1</li>
-          <li>Special2</li>
-        </ul>
+        <Navigation />
       </nav>
     </div>
   );
