@@ -1,18 +1,15 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-export default function Card() {
+export default function Card({ name, id, picture }) {
   return (
-    <CardElement>
-      <h2>Morty</h2>
-      <img
-        src="https://rickandmortyapi.com/api/character/avatar/2.jpeg"
-        alt=""
-      />
+    <CardElement id={id}>
+      <h2>{name}</h2>
+      <img src={picture} alt="" />
     </CardElement>
   );
 }
 
-const CardElement = styled.li`
+const CardElement = styled.article`
   border: 1px grey solid;
   background-color: lightgrey;
   border-radius: 4%;
